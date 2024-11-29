@@ -13,6 +13,6 @@ Use one of the tutorials listed under "Links & Further Resources" to create a si
 Create first the Proto-file where you define your gRPC Service and its data structures
 Implement a gRPC server and gRPC client in a programming language of your choice
 Document each single development step in your protocol and describe the most important code snippets in few sentences. Furthermore, the output of the application and any problems that occur should be documented in submission document.
-####Requirements zur Gänze erfüllt
+#### Requirements zur Gänze erfüllt
 Customize the service so that a simple ElectionData record can be transferred
 Document which parts of the program need to be adapted
