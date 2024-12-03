@@ -6,7 +6,6 @@ import io.grpc.ManagedChannelBuilder;
 public class HelloWorldClient {
 
     public static void main(String[] args) {
-
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051)
                 .usePlaintext()
                 .build();
@@ -14,8 +13,8 @@ public class HelloWorldClient {
         HelloWorldServiceGrpc.HelloWorldServiceBlockingStub stub = HelloWorldServiceGrpc.newBlockingStub(channel);
 
         Hello.HelloResponse helloResponse = stub.hello(Hello.HelloRequest.newBuilder()
-                .setFirstname("Max")
-                .setLastname("Mustermann")
+                .setFirstname("Nico")
+                .setLastname("Furtner")
                 .build());
         System.out.println( helloResponse.getText() );
         channel.shutdown();
